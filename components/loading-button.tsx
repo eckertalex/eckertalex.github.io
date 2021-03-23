@@ -11,7 +11,6 @@ export type LoadingButtonProps = {
   iconSuccess: React.ReactNode
   state: 'idle' | 'loading' | 'success' | 'error'
   text: React.ReactNode
-  textError: React.ReactNode
   textLoading: React.ReactNode
 }
 
@@ -26,7 +25,6 @@ export function LoadingButton({
   iconSuccess,
   state,
   text,
-  textError,
   textLoading,
   ...props
 }: LoadingButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>) {

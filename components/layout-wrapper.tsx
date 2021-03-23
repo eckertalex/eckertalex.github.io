@@ -43,7 +43,9 @@ export function LayoutWrapper(props: LayoutWrapperProps) {
           </div>
         </header>
         <main className="mb-auto">{children}</main>
-        <Subscribe />
+        <div className="mx-auto">
+          <Subscribe />
+        </div>
         <Footer />
       </div>
     </SectionContainer>
