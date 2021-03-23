@@ -5,8 +5,13 @@ import {SectionContainer} from '@/components/section-container'
 import {Footer} from '@/components/footer'
 import {MobileNav} from '@/components/mobile-nav'
 import {ThemeSwitch} from '@/components/theme-switch'
+import {Subscribe} from '@/components/subscribe'
 
-export function LayoutWrapper(props: React.PropsWithChildren<unknown>) {
+type LayoutWrapperProps = {
+  children: React.ReactNode
+}
+
+export function LayoutWrapper(props: LayoutWrapperProps) {
   const {children} = props
 
   return (
@@ -38,6 +43,7 @@ export function LayoutWrapper(props: React.PropsWithChildren<unknown>) {
           </div>
         </header>
         <main className="mb-auto">{children}</main>
+        <Subscribe />
         <Footer />
       </div>
     </SectionContainer>

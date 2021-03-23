@@ -1,4 +1,8 @@
-export function Badge(props: React.PropsWithChildren<unknown>) {
+type BadgeProps = {
+  children: React.ReactNode
+}
+
+export function Badge(props: BadgeProps) {
   const {children} = props
 
   return (

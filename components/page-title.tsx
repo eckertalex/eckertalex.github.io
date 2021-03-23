@@ -1,4 +1,7 @@
-export function PageTitle(props: React.PropsWithChildren<unknown>) {
+type PageTitleProps = {
+  children: React.ReactNode
+}
+export function PageTitle(props: PageTitleProps) {
   const {children} = props
 
   return (
