@@ -15,13 +15,14 @@ export function LayoutWrapper(props: React.PropsWithChildren<unknown>) {
         <header className="flex items-center justify-between py-10">
           <div>
             <CustomLink aria-label="eckertalex.dev" className="hover:no-underline" href="/">
-              <div className="flex items-center justify-between">
-                <div className="h-6 text-4xl font-semibold text-pink-500">{siteMetadata.author}</div>
+              <div className="flex items-center justify-between font-mono text-2xl font-semibold text-pink-400">
+                <div className="block md:hidden">AE</div>
+                <div className="hidden md:block">{siteMetadata.author}</div>
               </div>
             </CustomLink>
           </div>
           <div className="flex items-center text-base leading-5">
-            <div className="hidden md:block">
+            <div className="hidden sm:block">
               {headerNavLinks.map((link) => (
                 <CustomLink
                   className="p-1 font-medium text-gray-700 sm:p-4 dark:text-gray-400"

@@ -17,7 +17,7 @@ export function MobileNav() {
     }
 
   return (
-    <div className="md:hidden">
+    <div className="sm:hidden">
       <button aria-label="Toggle Menu" className="w-8 h-8 ml-1 mr-1 rounded" onClick={onToggleNav} type="button">
         <svg
           className="text-gray-900 dark:text-gray-100"
