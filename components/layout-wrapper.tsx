@@ -1,5 +1,5 @@
 import siteMetadata from '@/data/siteMetadata.json'
-import {headerNavLinks} from '@/data/headerNavLinks'
+import {headerNavLinks} from '@/data/navLinks'
 import {CustomLink} from '@/components/link'
 import {SectionContainer} from '@/components/section-container'
 import {Footer} from '@/components/footer'
@@ -15,7 +15,7 @@ export function LayoutWrapper(props: React.PropsWithChildren<unknown>) {
         <header className="flex items-center justify-between py-10">
           <div>
             <CustomLink aria-label="eckertalex.dev" className="hover:no-underline" href="/">
-              <div className="flex items-center justify-between font-mono text-2xl font-semibold text-pink-400">
+              <div className="flex items-center justify-between font-mono text-2xl font-semibold text-pink-500">
                 <div className="block md:hidden">AE</div>
                 <div className="hidden md:block">{siteMetadata.author}</div>
               </div>

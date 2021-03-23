@@ -9,6 +9,55 @@ export function Footer() {
       <div className="flex space-x-4">
         <NowPlaying />
       </div>
+      <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-4">
+        <div className="flex flex-col space-y-4">
+          <CustomLink className="font-medium text-gray-700 dark:text-gray-400" href="/">
+            Home
+          </CustomLink>
+          <CustomLink className="font-medium text-gray-700 dark:text-gray-400" href="/about">
+            About
+          </CustomLink>
+          <CustomLink className="font-medium text-gray-700 dark:text-gray-400" href="/newsletter">
+            Newsletter
+          </CustomLink>
+        </div>
+        <div className="flex flex-col space-y-4">
+          <CustomLink className="font-medium text-gray-700 dark:text-gray-400" href="/dashboard">
+            Dashboard
+          </CustomLink>
+          <CustomLink className="font-medium text-gray-700 dark:text-gray-400" href="/blog">
+            Blog
+          </CustomLink>
+          <CustomLink className="font-medium text-gray-700 dark:text-gray-400" href="/tags">
+            Tags
+          </CustomLink>
+        </div>
+        <div className="flex flex-col space-y-4">
+          <CustomLink className="font-medium text-gray-700 dark:text-gray-400" href="/uses">
+            Uses
+          </CustomLink>
+          <CustomLink className="font-medium text-gray-700 dark:text-gray-400" href="/links">
+            Links
+          </CustomLink>
+          <CustomLink className="font-medium text-gray-700 dark:text-gray-400" href="/articles">
+            Articles
+          </CustomLink>
+        </div>
+        <div className="flex flex-col space-y-4">
+          <CustomLink className="font-medium text-gray-700 dark:text-gray-400" href="/vscode">
+            VSCode
+          </CustomLink>
+          <CustomLink className="font-medium text-gray-700 dark:text-gray-400" href="/git">
+            Git
+          </CustomLink>
+          <CustomLink className="font-medium text-gray-700 dark:text-gray-400" href="/terminal">
+            Terminal
+          </CustomLink>
+          <CustomLink className="font-medium text-gray-700 dark:text-gray-400" href="/keyboard">
+            Keyboard
+          </CustomLink>
+        </div>
+      </div>
       <div className="flex mb-3 space-x-4">
         <SocialIcons href={`mailto:${siteMetadata.email}`} kind="mail" size={6} />
         <SocialIcons href={siteMetadata.github} kind="github" size={6} />
