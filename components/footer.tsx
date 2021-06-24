@@ -23,6 +23,7 @@ function Footer() {
           <CustomLink href="/about">About</CustomLink>
           <CustomLink href="/dashboard">Dashboard</CustomLink>
           <CustomLink href="/reading">Reading</CustomLink>
+          <CustomLink href="/reading/new">New Reading</CustomLink>
         </VStack>
         <VStack alignItems="start">
           <CustomLink href="/timeline">Timeline</CustomLink>
